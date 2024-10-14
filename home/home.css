@@ -1,0 +1,128 @@
+body{
+    background-color:   white(234, 229, 190);;
+    color: rgb(0, 0, 102);
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.container{
+    margin-inline: auto;
+    max-width: 1900px;
+}
+.header_wrappper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+.nav a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+}
+.content{
+    margin-top: 80px;
+}
+.content__wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content__image {
+    border-radius: 50%;
+    overflow: hidden; 
+    width: 500px; 
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.content__text button {
+    position: relative;
+    padding: 15px 30px;
+    background-color: #f3e36b; 
+    color: #333; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+}
+.content__text button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: white; 
+    z-index: -1;
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+.content__text button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.content__text h2{
+ font-size: 80px ;
+ margin-bottom: 20px;
+ line-height: 1
+}
+.content__text p{
+ font-size: 25px;
+ margin-bottom: 15px; 
+    line-height: 0;
+}
+.content__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width: 839px){
+    .header_wrappper .icons{
+        display: none;
+    }
+    .content__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 839px){
+    .content__wrapper .icons{
+        display: none;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+body {
+    background-color: white;
+    color: rgb(0, 0, 102);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 1900px;
+}
+
+.head__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 102);
+}
+
+.content {
+    margin-top: 80px;
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Father__content, .Mother__content, .Sister__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.father_text, .Mother_text, .Sister_text {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.father__image, .Mother__image, .Sister__image {
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.father__image img, .Mother__image img, .Sister__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1274px) {
+    .Father__content, .Mother__content, .Sister__content {
+        flex-direction: column; 
+    }
+
+    .father__image, .Mother__image, .Sister__image {
+        width: 300px;
+        height: 300px; 
+    }
+}
+.burger-checkbox {
+    display: none;
+}
+
+.burger-label {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-label span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 102);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 450px) {
+    .nav ul {
+        display: none; 
+        flex-direction: column;
+        gap: 10px;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; 
+        background-color: rgba(47, 50, 66, 0.95); 
+        padding: 20px;
+        z-index: 999; 
+    }
+
+    .nav ul li {
+        margin: 20px 0; 
+    }
+
+    .burger-checkbox:checked + .burger-label + .nav ul {
+        display: flex; 
+    }
+
+   
+    .burger-label {
+        display: flex;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 1000; 
+    }
+
+    
+    .burger-checkbox:checked + .burger-label span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-checkbox:checked + .burger-label span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger-checkbox:checked + .burger-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    
+    .nav a {
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+}

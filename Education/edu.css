@@ -1,0 +1,399 @@
+body {
+    background-color: white;
+    color: rgb(0, 0, 102); 
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 1900px;
+}
+
+.head__wraper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 102);
+}
+.content_school {
+    margin-top: 80px;
+    
+}
+.photo_school{
+    height: 599px;
+    max-width: 800px;
+}
+.school_text{
+    color: white;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.content_but {
+    margin-left: auto; 
+}
+.school_text h2, .school_text p {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    color: white; 
+}
+
+.school_text h2 {
+    font-size: 2rem; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+}
+
+.school_text p {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2); 
+}
+.photo_school img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: RGB(47, 50, 66);
+}
+.school_text button {
+    position: relative;
+    padding: 15px 30px;
+    background-color: #f3e36b; 
+    color: #333; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+}
+.school_text button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: white; 
+    z-index: -1;
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+.school_text button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+.content_college{
+    margin-top: 30px;
+}
+.college_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.college_text{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.college__image{
+    height: 599px;
+    max-width: 800px;
+}
+.college__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.college_text h2, .college_text p {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+.college_text h2 {
+    font-size: 2rem; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+}
+
+.college_text p {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2); 
+}
+.college_but button {
+    position: relative;
+    padding: 15px 30px;
+    background-color: rgb(0, 0, 102);  
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+    z-index: 1; 
+}
+.college_but button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    background-color: white; 
+    color: rgb(0, 0, 102); 
+}
+.uni_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: RGB(47, 50, 66);
+}
+.uni_image{
+    height: 599px;
+    max-width: 800px;
+}
+.uni_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.university{
+    margin-top: 30px;
+}
+.uni_text{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.uni_but{
+    margin-left: auto;
+}
+.uni_text h2, .uni_text p {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    color: white;
+}
+
+.uni_text h2 {
+    font-size: 2rem; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+}
+
+.uni_text p {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2); 
+}
+.uni_text button {
+    position: relative;
+    padding: 15px 30px;
+    background-color: #f3e36b; 
+    color: #333; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+}
+.uni_text button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: white; 
+    z-index: -1;
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+.uni_text button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+    margin-top: 50px;
+}
+.timeline-container {
+    background-color: #2F3242;
+    padding: 20px;
+    color: #fff;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 20px;
+    border-left: 4px solid #F39C12;
+    padding-left: 20px;
+}
+
+.education-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.education-table th, .education-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #394158;
+}
+
+.education-table th {
+    background-color: #F39C12;
+    color: #fff;
+}
+
+.education-table td {
+    color: #fff;
+}
+
+@media  (max-width: 600px) {
+    
+    .photo_school, .college__image, .uni_image {
+        height: auto; 
+        width: 100%;  
+        max-width: 100%; 
+    }
+
+    
+    .school_text, .college_text, .uni_text {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+   
+    .content_but, .college_but, .uni_but {
+        text-align: center;
+    }
+    
+    .school_text button, .college_but button, .uni_text button {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger-label {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-label span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 102);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 400px) {
+    .nav ul {
+        display: none; 
+        flex-direction: column;
+        gap: 10px;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; 
+        background-color: rgba(47, 50, 66, 0.95); 
+        padding: 20px;
+        z-index: 999; 
+    }
+
+    .nav ul li {
+        margin: 20px 0; 
+    }
+
+    .burger-checkbox:checked + .burger-label + .nav ul {
+        display: flex; 
+    }
+
+   
+    .burger-label {
+        display: flex;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 1000; 
+    }
+
+    
+    .burger-checkbox:checked + .burger-label span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-checkbox:checked + .burger-label span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger-checkbox:checked + .burger-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+   
+    .nav a {
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+}
